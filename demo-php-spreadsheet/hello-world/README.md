@@ -1,4 +1,6 @@
 
+# Hello World 範例
+
 ## 安裝「phpoffice/phpspreadsheet」
 
 參考下面這個網址
@@ -21,7 +23,15 @@ $ composer require phpoffice/phpspreadsheet
 $ ./install.sh
 ```
 
+
+## 注意事項
+
 若沒有安裝「composer」，可以參考「[我安裝composer的方式](../../demo-install-composer/ex-install-composer)」。
+
+若要使用「composer」，必須事先安裝「php-cli」，可以參考「[我安裝php-cli的方式](../../demo-install-php-cli/ex-install-php-cli)」。
+
+若要安裝「phpoffice/phpspreadsheet」，必須事先安裝一些所需要的「php-extension」，可以參考「[我安裝的方式](../../demo-install-php-cli/ex-install-php-ext-for-php-spreadsheet)」。
+
 
 ## 第一個程式
 
