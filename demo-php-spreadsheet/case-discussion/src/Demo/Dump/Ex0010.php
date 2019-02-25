@@ -19,6 +19,8 @@ class Ex0010 {
 
 	protected function dump_file ($file_path)
 	{
+		// https://github.com/PHPOffice/PhpSpreadsheet/blob/master/samples/Reader/01_Simple_file_reader_using_IOFactory.php
+
 		echo 'Dump file: ' . $file_path;
 		echo PHP_EOL;
 		echo PHP_EOL;
