@@ -25,11 +25,16 @@
 ## GitHub
 
 * [https://github.com/PHPOffice/PhpSpreadsheet](https://github.com/PHPOffice/PhpSpreadsheet)
+* [https://github.com/PHPOffice/PhpSpreadsheet/tree/master/samples](https://github.com/PHPOffice/PhpSpreadsheet/tree/master/samples)
 
 
 ## Doc
 
 * [https://phpspreadsheet.readthedocs.io](https://phpspreadsheet.readthedocs.io)
+* [https://phpspreadsheet.readthedocs.io/en/latest/#installation](https://phpspreadsheet.readthedocs.io/en/latest/#installation)
+* [https://phpspreadsheet.readthedocs.io/en/latest/topics/accessing-cells/](https://phpspreadsheet.readthedocs.io/en/latest/topics/accessing-cells/)
+* [https://phpspreadsheet.readthedocs.io/en/latest/topics/reading-and-writing-to-file/#reading-and-writing-to-file](https://phpspreadsheet.readthedocs.io/en/latest/topics/reading-and-writing-to-file/#reading-and-writing-to-file)
+* [https://phpspreadsheet.readthedocs.io/en/latest/topics/calculation-engine/#calculation-cache](https://phpspreadsheet.readthedocs.io/en/latest/topics/calculation-engine/#calculation-cache)
 
 
 ## Api
