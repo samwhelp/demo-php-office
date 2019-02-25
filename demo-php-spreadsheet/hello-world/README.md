@@ -21,6 +21,8 @@ $ composer require phpoffice/phpspreadsheet
 $ ./install.sh
 ```
 
+若沒有安裝「composer」，可以參考「[我安裝composer的方式](../../demo-install-composer/ex-install-composer)」。
+
 ## 第一個程式
 
 參考下面網址
