@@ -84,19 +84,21 @@ class Ex0010 {
 			然後另存到「var/merge-ex0010/final.ods」這個檔案。
 		*/
 
-		foreach ( $data_3 as $row_index_3 => $row_3) {
-			if ($row_index_3 == 1) {
+		foreach ($data_3 as $row_index_3 => $row_3) {
+
+			if ($row_index_3 == 1) { // 不處理第一列
 				continue;
 			}
 
 			foreach ($row_3 as $col_index_3 => $col_3) {
 
-				if ($col_index_3 == 'C') {
+				if ($col_index_3 == 'C') { // 不處理第三欄
 					continue;
 				}
-				$cell_name = $col_index_3 . $row_index_3;
 
-				//var_dump($col_index_3 . $row_index_3  );
+				$cell_name = $col_index_3 . $row_index_3;
+				//var_dump($cell_name);
+
 				//$new_val = '1';
 				$new_val = $data_1[$row_index_3][$col_index_3];
 				$spreadsheet_3->getActiveSheet()->setCellValue($cell_name, $new_val);
