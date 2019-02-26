@@ -95,3 +95,37 @@ $ make merge-ex0020
 ```
 
 執行主要程式碼，請參考「[src/Demo/Merge/Ex0010.php](src/Demo/Merge/Ex0020.php)」。
+
+
+### dump-ex0011
+
+執行
+
+``` sh
+$ ./bin/dump-ex0011.php
+```
+
+或是執行
+
+``` sh
+$ make dump-ex0011
+```
+
+執行主要程式碼，請參考「[src/Demo/Dump/Ex0011.php](src/Demo/Dump/Ex0011.php)」。
+
+
+### dump-ex0021
+
+執行
+
+``` sh
+$ ./bin/dump-ex0021.php
+```
+
+或是執行
+
+``` sh
+$ make dump-ex0021
+```
+
+執行主要程式碼，請參考「[src/Demo/Dump/Ex0021.php](src/Demo/Dump/Ex0021.php)」。

@@ -75,7 +75,7 @@ class Ex0010 {
 	}
 
 
-} // End class Hello
+} // End class Ex0010
 
 /*
 Dump file: /home/user/project/demo-php-office/demo-php-spreadsheet/case-discussion/asset/merge/1.ods

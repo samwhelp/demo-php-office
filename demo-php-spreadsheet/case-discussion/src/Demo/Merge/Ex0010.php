@@ -203,4 +203,4 @@ class Ex0010 {
 		mkdir($dir_path, 0755 ,true);
 	}
 
-} // End class Hello
+} // End class Ex0010
