@@ -15,14 +15,25 @@ class Ex0010 {
 
 
 		// https://github.com/PHPOffice/PhpSpreadsheet/blob/master/samples/Reader/01_Simple_file_reader_using_IOFactory.php
+
+////////////////////////////////////////////////////////////////////////////////
+//
+		// 載入「asset/merge/merge/1.ods」
 		$file_path_1 = THE_ASSET_DIR_PATH . '/merge/1.ods';
 
 		$spreadsheet_1 = IOFactory::load($file_path_1);
 
 		$data_1 = $spreadsheet_1->getActiveSheet()->toArray(null, true, true, true);
 		//var_dump($data_1);
+//
+////////////////////////////////////////////////////////////////////////////////
 
 
+
+
+////////////////////////////////////////////////////////////////////////////////
+//
+		// 載入「asset/merge/merge/1.ods」
 		$file_path_3 =  THE_ASSET_DIR_PATH . '/merge/3.ods';
 
 		$spreadsheet_3 = IOFactory::load($file_path_3);
@@ -31,7 +42,21 @@ class Ex0010 {
 
 		$data_3 = $spreadsheet_3->getActiveSheet()->toArray(null, true, true, true);
 		//var_dump($data_3);
+//
+////////////////////////////////////////////////////////////////////////////////
 
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//
+		/*
+			原本「3.ods」的「C2」是「=SUM(A2:B2)」
+			原本「3.ods」的「C3」是「=SUM(A3:B3)」
+			這個範例會將「1.ods」的「A2」「A3」「B2」「B2」的值,
+			填到「3.ods」的「A2」「A3」「B2」「B2」，
+			然後另存到「var/merge-ex0010/final.ods」這個檔案。
+		*/
 		foreach ( $data_3 as $row_index_3 => $row_3) {
 			if ($row_index_3 == 1) {
 				continue;
@@ -51,17 +76,38 @@ class Ex0010 {
 
 			}
 		}
+//
+////////////////////////////////////////////////////////////////////////////////
 
-		//https://phpspreadsheet.readthedocs.io/en/latest/topics/calculation-engine/#calculation-cache
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//
+		// 這裡要將「Cache」清除，這樣最後寫入的時候，「C2」和「C3」才會是正確的值。
+		// https://phpspreadsheet.readthedocs.io/en/latest/topics/calculation-engine/#calculation-cache
 		//Calculation::getInstance($spreadsheet_3)->disableCalculationCache();
 		Calculation::getInstance($spreadsheet_3)->clearCalculationCache();
+//
+////////////////////////////////////////////////////////////////////////////////
 
 
+
+
+////////////////////////////////////////////////////////////////////////////////
+//
+		// 另存新檔到「var/merge-ex0010/final.ods」。
 		$file_path_final = THE_VAR_DIR_PATH . '/merge-ex0010/final.ods';
 		$writer = IOFactory::createWriter($spreadsheet_3, "Ods");
 		$writer->save($file_path_final);
+//
+////////////////////////////////////////////////////////////////////////////////
 
 
+
+////////////////////////////////////////////////////////////////////////////////
+//
+		// 完成後，顯示提示訊息
 		echo 'Merge_file_1: ' . $file_path_1;
 		echo PHP_EOL;
 		echo 'Merge_file_3: ' . $file_path_3;
@@ -72,6 +118,8 @@ class Ex0010 {
 		echo PHP_EOL;
 		echo '$ localc '. $file_path_final;
 		echo PHP_EOL;
+//
+////////////////////////////////////////////////////////////////////////////////
 
 	}
 
