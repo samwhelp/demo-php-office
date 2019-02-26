@@ -94,7 +94,7 @@ $ ./bin/merge-ex0020.php
 $ make merge-ex0020
 ```
 
-執行主要程式碼，請參考「[src/Demo/Merge/Ex0010.php](src/Demo/Merge/Ex0020.php)」。
+執行主要程式碼，請參考「[src/Demo/Merge/Ex0020.php](src/Demo/Merge/Ex0020.php)」。
 
 
 ### dump-ex0011
