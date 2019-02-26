@@ -4,7 +4,7 @@ namespace Demo\Dump;
 
 use PhpOffice\PhpSpreadsheet\IOFactory;
 
-class Ex0010 {
+class Ex0020 {
 
 	public function run ()
 	{
@@ -33,7 +33,7 @@ class Ex0010 {
 
 		// https://phpoffice.github.io/PhpSpreadsheet/master/PhpOffice/PhpSpreadsheet/Spreadsheet.html#method_getActiveSheet
 		// https://phpoffice.github.io/PhpSpreadsheet/master/PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html#method_toArray
-		$data = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
+		$data = $spreadsheet->getActiveSheet()->toArray(null, false, true, true);
 
 		var_dump($data);
 
@@ -149,7 +149,7 @@ array(3) {
     ["B"]=>
     NULL
     ["C"]=>
-    int(0)
+    string(11) "=SUM(A2:B2)"
   }
   [3]=>
   array(3) {
@@ -158,7 +158,7 @@ array(3) {
     ["B"]=>
     NULL
     ["C"]=>
-    int(0)
+    string(11) "=SUM(A3:B3)"
   }
 }
 */
