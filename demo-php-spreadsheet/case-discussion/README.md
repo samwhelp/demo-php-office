@@ -54,3 +54,17 @@ $ ./bin/merge-ex0010.php
 ``` sh
 $ make merge-ex0010
 ```
+
+### merge-ex0020
+
+執行
+
+``` sh
+$ ./bin/merge-ex0020.php
+```
+
+或是執行
+
+``` sh
+$ make merge-ex0020
+```

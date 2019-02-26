@@ -11,5 +11,6 @@ help:
 	@echo make dump-ex0010
 
 	@echo make merge-ex0010
+	@echo make merge-ex0020
 
 .PHONY: help
