@@ -34,7 +34,7 @@ class Ex0010 {
 
 ////////////////////////////////////////////////////////////////////////////////
 //
-		// 載入「asset/merge/merge/1.ods」
+		// 載入「asset/merge/merge/3.ods」
 		// https://github.com/PHPOffice/PhpSpreadsheet/blob/master/samples/Reader/01_Simple_file_reader_using_IOFactory.php
 		$file_path_3 =  THE_ASSET_DIR_PATH . '/merge/3.ods';
 
