@@ -54,7 +54,7 @@ class Ex0010 {
 //
 
 		/*
-			1.Ods
+			1.ods
 
 			A, B
 
@@ -66,7 +66,7 @@ class Ex0010 {
 
 
 		/*
-			3.Ods
+			3.ods
 
 			A, B, C
 
@@ -75,6 +75,18 @@ class Ex0010 {
 		3	 ,  , =SUM(A3:B3)
 
 		*/
+
+		/*
+			final.ods
+
+			A, B, C
+
+		1	x, y, sum
+		2	1, 2, =SUM(A2:B2)
+		3	3, 4, =SUM(A3:B3)
+
+		*/
+
 
 		/*
 			原本「3.ods」的「C2」是「=SUM(A2:B2)」
