@@ -22,8 +22,13 @@ class Ex0010 {
 		// https://github.com/PHPOffice/PhpSpreadsheet/blob/master/samples/Reader/01_Simple_file_reader_using_IOFactory.php
 		$file_path_1 = THE_ASSET_DIR_PATH . '/merge/1.ods';
 
+		// https://phpoffice.github.io/PhpSpreadsheet/master/PhpOffice/PhpSpreadsheet/IOFactory.html#method_load
+		// https://phpoffice.github.io/PhpSpreadsheet/master/PhpOffice/PhpSpreadsheet/Spreadsheet.html
 		$spreadsheet_1 = IOFactory::load($file_path_1);
 
+
+		// https://phpoffice.github.io/PhpSpreadsheet/master/PhpOffice/PhpSpreadsheet/Spreadsheet.html#method_getActiveSheet
+		// https://phpoffice.github.io/PhpSpreadsheet/master/PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html#method_toArray
 		$data_1 = $spreadsheet_1->getActiveSheet()->toArray(null, true, true, true);
 		//var_dump($data_1);
 //
@@ -113,6 +118,8 @@ class Ex0010 {
 
 				//$new_val = '1';
 				$new_val = $data_1[$row_index_3][$col_index_3];
+
+				// https://phpoffice.github.io/PhpSpreadsheet/master/PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html#method_setCellValue
 				$spreadsheet_3->getActiveSheet()->setCellValue($cell_name, $new_val);
 
 			}
@@ -129,6 +136,9 @@ class Ex0010 {
 		// https://phpspreadsheet.readthedocs.io/en/latest/topics/calculation-engine/#calculation-cache
 		//Calculation::getInstance($spreadsheet_3)->disableCalculationCache();
 		Calculation::getInstance($spreadsheet_3)->clearCalculationCache();
+
+		// https://phpoffice.github.io/PhpSpreadsheet/master/PhpOffice/PhpSpreadsheet/Calculation/Calculation.html#method_getInstance
+
 //
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -139,7 +149,11 @@ class Ex0010 {
 //
 		// 另存新檔到「var/merge-ex0010/final.ods」。
 		$file_path_final = THE_VAR_DIR_PATH . '/merge-ex0010/final.ods';
+
+		// https://phpoffice.github.io/PhpSpreadsheet/master/PhpOffice/PhpSpreadsheet/IOFactory.html#method_createWriter
 		$writer = IOFactory::createWriter($spreadsheet_3, "Ods");
+
+		// https://phpoffice.github.io/PhpSpreadsheet/master/PhpOffice/PhpSpreadsheet/Writer/IWriter.html#method_save
 		$writer->save($file_path_final);
 //
 ////////////////////////////////////////////////////////////////////////////////
