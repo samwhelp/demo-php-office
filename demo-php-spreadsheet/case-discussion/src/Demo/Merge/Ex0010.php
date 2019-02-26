@@ -14,11 +14,12 @@ class Ex0010 {
 		$this->prepareDir();
 
 
-		// https://github.com/PHPOffice/PhpSpreadsheet/blob/master/samples/Reader/01_Simple_file_reader_using_IOFactory.php
+
 
 ////////////////////////////////////////////////////////////////////////////////
 //
 		// 載入「asset/merge/merge/1.ods」
+		// https://github.com/PHPOffice/PhpSpreadsheet/blob/master/samples/Reader/01_Simple_file_reader_using_IOFactory.php
 		$file_path_1 = THE_ASSET_DIR_PATH . '/merge/1.ods';
 
 		$spreadsheet_1 = IOFactory::load($file_path_1);
@@ -34,6 +35,7 @@ class Ex0010 {
 ////////////////////////////////////////////////////////////////////////////////
 //
 		// 載入「asset/merge/merge/1.ods」
+		// https://github.com/PHPOffice/PhpSpreadsheet/blob/master/samples/Reader/01_Simple_file_reader_using_IOFactory.php
 		$file_path_3 =  THE_ASSET_DIR_PATH . '/merge/3.ods';
 
 		$spreadsheet_3 = IOFactory::load($file_path_3);
