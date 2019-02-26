@@ -14,6 +14,7 @@ class Ex0010 {
 		$this->prepareDir();
 
 
+		// https://github.com/PHPOffice/PhpSpreadsheet/blob/master/samples/Reader/01_Simple_file_reader_using_IOFactory.php
 		$file_path_1 = THE_ASSET_DIR_PATH . '/merge/1.ods';
 
 		$spreadsheet_1 = IOFactory::load($file_path_1);
@@ -31,7 +32,7 @@ class Ex0010 {
 		$data_3 = $spreadsheet_3->getActiveSheet()->toArray(null, true, true, true);
 		//var_dump($data_3);
 
-		foreach( $data_3 as $row_index_3 => $row_3) {
+		foreach ( $data_3 as $row_index_3 => $row_3) {
 			if ($row_index_3 == 1) {
 				continue;
 			}
