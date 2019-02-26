@@ -26,6 +26,7 @@ $ ./bin/hello.php
 $ make hello
 ```
 
+執行主要程式碼，請參考「[src/Demo/Hello.php](src/Demo/Hello.php)」。
 
 ### dump-ex0010
 
@@ -41,6 +42,8 @@ $ ./bin/dump-ex0010.php
 $ make dump-ex0010
 ```
 
+執行主要程式碼，請參考「[src/Demo/Dump/Ex0010.php](src/Demo/Dump/Ex0010.php)」。
+
 ### merge-ex0010
 
 執行
@@ -55,6 +58,8 @@ $ ./bin/merge-ex0010.php
 $ make merge-ex0010
 ```
 
+執行主要程式碼，請參考「[src/Demo/Merge/Ex0010.php](src/Demo/Merge/Ex0010.php)」。
+
 ### merge-ex0020
 
 執行
@@ -68,3 +73,5 @@ $ ./bin/merge-ex0020.php
 ``` sh
 $ make merge-ex0020
 ```
+
+執行主要程式碼，請參考「[src/Demo/Merge/Ex0010.php](src/Demo/Merge/Ex0020.php)」。
