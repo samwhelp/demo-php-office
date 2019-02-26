@@ -10,6 +10,8 @@
 
 請先閱讀「[Tutorial](Tutorial.md)」。
 
+回覆該議題主要的範例是「[case-discussion](case-discussion)」。
+
 ## Howto
 
 * [Install php-cli](../demo-install-php-cli)
