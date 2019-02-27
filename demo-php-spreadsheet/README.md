@@ -42,3 +42,9 @@
 ## Api
 
 * [https://phpoffice.github.io/PhpSpreadsheet/master/](https://phpoffice.github.io/PhpSpreadsheet/master/)
+
+
+## 以前相關的討論
+
+* [#7 回覆: Unicode9.0字元一覽有感(如何透過unzip確認ODF是否有內嵌字型)](https://www.ubuntu-tw.org/modules/newbb/viewtopic.php?post_id=354988#forumpost354988)
+* [#23 回覆: [自製注音輸入法表格分享]全字庫注音2016年08月份版本](https://www.ubuntu-tw.org/modules/newbb/viewtopic.php?post_id=354760#forumpost354760)
