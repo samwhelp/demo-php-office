@@ -49,6 +49,8 @@
 
 請參考「[test-0060.sh](test-0060.sh)」。
 
+而「Filter Options」也可以套用在「[unoconv](http://manpages.ubuntu.com/manpages/bionic/en/man1/unoconv.1.html)」，請參考「[demo-ods-to-csv-use-unoconv](../demo-ods-to-csv-use-unoconv) / [test-0020.sh](../demo-ods-to-csv-use-unoconv/test-0020.sh)」。
+
 
 ## Explore
 
