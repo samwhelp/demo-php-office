@@ -8,7 +8,18 @@
 
 ## Install unoconv
 
+執行下面指令，安裝「[unoconv](https://packages.ubuntu.com/bionic/unoconv)」。
+
+``` sh
+$ sudo apt-get install unoconv
+```
+
 請參考「[install.sh](install.sh)」。
+
+
+## Manpage
+
+$ man [unoconv](http://manpages.ubuntu.com/manpages/bionic/en/man1/unoconv.1.html)
 
 
 ## Example
