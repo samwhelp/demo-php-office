@@ -16,4 +16,4 @@ $ git clone https://github.com/samwhelp/demo-php-office.git
 * [Demo install php-cli](demo-install-php-cli)
 * [Demo install composer](demo-install-composer)
 * [Demo PhpSpreadsheet](demo-php-spreadsheet)
-* [Demo --convert-to](demo-convert-to)
+* [Demo convert-to](demo-convert-to)
