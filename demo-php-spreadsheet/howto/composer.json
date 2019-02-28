@@ -1,0 +1,14 @@
+{
+    "name": "demo/php-spreadsheet",
+    "description": "Demo PhpSpreadsheet",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Demo\\": "src/Demo"
+        }
+    }
+}
