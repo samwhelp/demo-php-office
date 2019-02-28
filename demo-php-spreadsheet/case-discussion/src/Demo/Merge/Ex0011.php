@@ -106,7 +106,10 @@ class Ex0011 {
 
 		// https://phpoffice.github.io/PhpSpreadsheet/master/PhpOffice/PhpSpreadsheet/Spreadsheet.html#method_getWorksheetIterator
 		// https://phpoffice.github.io/PhpSpreadsheet/master/PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html
-		foreach ($spreadsheet_3->getWorksheetIterator() as $worksheet) {
+
+		//foreach ($spreadsheet_3->getWorksheetIterator() as $worksheet) {
+
+			$worksheet = $spreadsheet_3->getActiveSheet();
 
 			// https://phpoffice.github.io/PhpSpreadsheet/master/PhpOffice/PhpSpreadsheet/Worksheet/Worksheet.html#method_getRowIterator
 			// https://phpoffice.github.io/PhpSpreadsheet/master/PhpOffice/PhpSpreadsheet/Worksheet/RowIterator.html
@@ -156,7 +159,7 @@ class Ex0011 {
 				}
 
 			}
-		}
+		//}
 
 //
 ////////////////////////////////////////////////////////////////////////////////
