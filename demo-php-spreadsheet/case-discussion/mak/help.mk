@@ -13,6 +13,7 @@ help:
 
 	@echo make merge-ex0010
 	@echo make merge-ex0020
+	@echo make merge-ex0011
 
 	@echo make dump-ex0011
 	@echo make dump-ex0021
