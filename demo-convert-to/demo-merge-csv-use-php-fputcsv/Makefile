@@ -4,6 +4,25 @@ default: merge
 .PHONY: default
 
 
+help:
+	@echo Usage:
+
+	@echo make
+	@echo make help
+
+	@echo make to-csv
+	@echo make merge
+
+	@echo make final-dump-csv
+	@echo make final-view-ods
+	@echo make final-view-csv
+
+	@echo make clean
+
+
+.PHONY: help
+
+
 merge: to-csv
 	@./merge.sh
 .PHONY: merge
