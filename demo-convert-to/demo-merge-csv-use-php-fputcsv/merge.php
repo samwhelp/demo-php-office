@@ -47,7 +47,15 @@ abstract class FileCsv {
 
 	public function close ()
 	{
-		fclose($this->getHandle());
+		$handle = $this->getHandle();
+
+		if ($handle === NULL) {
+			return;
+		}
+		fclose($handle);
+
+		$this->setHandle(NULL);
+
 		return $this;
 	}
 
@@ -73,6 +81,8 @@ class FileCsvReader extends FileCsv {
 		while (($cols = $this->readRow()) !== FALSE) {
 			array_push($this->_Data, $cols);
 		}
+
+		$this->close();
 
 		return $this;
 	}
@@ -104,6 +114,8 @@ class FileCsvWriter extends FileCsv {
 		foreach ($this->getData() as $cells) {
 			$this->writeRow($cells, $delimiter, $enclosure, $escape);
 		}
+
+		$this->close();
 
 		return $this;
 	}
@@ -167,9 +179,11 @@ class AppMerge {
 			->save()
 		;
 
+		/*
 		foreach ($this->_Csv as $csv) {
 			$csv->close();
 		}
+		*/
 
 	}
 
