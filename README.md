@@ -11,7 +11,7 @@ $ git clone https://github.com/samwhelp/demo-php-office.git
 ```
 
 
-## Example
+## Subject
 
 * [Demo install php-cli](demo-install-php-cli)
 * [Demo install composer](demo-install-composer)
@@ -20,7 +20,7 @@ $ git clone https://github.com/samwhelp/demo-php-office.git
 * [Demo filter-some-row](demo-case/filter-some-row)
 
 
-## Subject
+## Example
 
 ### localc --convert-to
 
