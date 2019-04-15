@@ -23,5 +23,5 @@
 ### python
 
 * [use-python-csv-prototype_1](use-python-csv-prototype_1)
-* [use-python-csv-prototype](use-python-csv-prototype)
+* [use-python-csv-prototype_2](use-python-csv-prototype_2)
 * [use-python-csv](use-python-csv)

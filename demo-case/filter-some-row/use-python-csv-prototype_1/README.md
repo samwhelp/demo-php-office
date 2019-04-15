@@ -16,5 +16,5 @@ $ make
 ## Reference
 
 * https://docs.python.org/3/library/csv.html
-* # https://docs.python.org/3/library/io.html
+* https://docs.python.org/3/library/io.html
 * https://blog.gtwang.org/programming/python-csv-file-reading-and-writing-tutorial/
