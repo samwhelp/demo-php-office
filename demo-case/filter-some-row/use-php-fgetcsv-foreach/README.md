@@ -1,5 +1,10 @@
 
 
+## 主要程式碼
+
+* [main.php](main.php)
+
+
 ## Howto
 
 來源檔案放在「data」這個資料夾底下

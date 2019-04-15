@@ -1,5 +1,12 @@
 
 
+## 主要程式碼
+
+* [main.sh](main.sh)
+* [main.py](main.py)
+
+
+
 ## Howto
 
 來源檔案放在「data」這個資料夾底下
