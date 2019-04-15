@@ -48,6 +48,7 @@ $ git clone https://github.com/samwhelp/demo-php-office.git
 * filter-some-row/[use-php-fgetcsv-foreach_2](demo-case/filter-some-row/use-php-fgetcsv-foreach_2)
 * filter-some-row/[use-php-fgetcsv_1](demo-case/filter-some-row/use-php-fgetcsv_1)
 * filter-some-row/[use-php-fgetcsv_2](demo-case/filter-some-row/use-php-fgetcsv_2)
+* filter-some-row/[use-php-fgetcsv_3](demo-case/filter-some-row/use-php-fgetcsv_3)
 * [demo-merge-csv-use-php-fputcsv](demo-convert-to/demo-merge-csv-use-php-fputcsv)
 
 

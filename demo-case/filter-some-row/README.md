@@ -20,6 +20,7 @@
 * [use-php-fgetcsv-foreach_2](use-php-fgetcsv-foreach_2)
 * [use-php-fgetcsv_1](use-php-fgetcsv_1)
 * [use-php-fgetcsv_2](use-php-fgetcsv_2)
+* [use-php-fgetcsv_3](use-php-fgetcsv_3)
 * [use-php-office](use-php-office)
 
 ### python
