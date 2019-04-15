@@ -45,8 +45,8 @@
 
 	function main ()
 	{
-		$input_csv = 'var/input.csv';
-		$output_csv = 'var/output.csv';
+		$input_csv = __DIR__ . '/var/input.csv';
+		$output_csv = __DIR__ . '/var/output.csv';
 
 		if (!file_exists($input_csv)) { //檢查檔案「var/input.csv」是否存在
 			echo '檔案不存在：' . $input_csv;
