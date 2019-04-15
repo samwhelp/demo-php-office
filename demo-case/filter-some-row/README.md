@@ -16,9 +16,10 @@
 ### php
 
 * [use-php-str_getcsv-foreach](use-php-str_getcsv-foreach)
-* [use-php-fgetcsv-foreach](use-php-fgetcsv-foreach)
-* [use-php-office](use-php-office)
+* [use-php-fgetcsv-foreach_1](use-php-fgetcsv-foreach_1)
+* [use-php-fgetcsv-foreach_2](use-php-fgetcsv-foreach_2)
 * [use-php-fgetcsv](use-php-fgetcsv)
+* [use-php-office](use-php-office)
 
 ### python
 

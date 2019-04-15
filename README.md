@@ -22,13 +22,24 @@ $ git clone https://github.com/samwhelp/demo-php-office.git
 
 ## Example
 
+
+### PHPOffice/PhpSpreadsheet
+
+* demo-php-spreadsheet/[hello-world](demo-php-spreadsheet/hello-world)
+* demo-php-spreadsheet/[case-discussion](demo-php-spreadsheet/case-discussion)
+* demo-php-spreadsheet/[howto](demo-php-spreadsheet/howto)
+* filter-some-row/[use-php-office](demo-case/filter-some-row/use-php-office)
+
+
 ### localc --convert-to
 
 * [localc --convert-to and csv-filter-options](demo-convert-to/demo-ods-to-csv-filter-options)
 
+
 ### awk
 
 * filter-some-row/[use-awk](demo-case/filter-some-row/use-awk)
+
 
 ### php fgetcsv and fputcsv and str_getcsv
 
@@ -37,6 +48,7 @@ $ git clone https://github.com/samwhelp/demo-php-office.git
 * filter-some-row/[use-php-fgetcsv](demo-case/filter-some-row/use-php-fgetcsv)
 * [demo-merge-csv-use-php-fputcsv](demo-convert-to/demo-merge-csv-use-php-fputcsv)
 
+
 ### python csv
 
 * filter-some-row/[use-python-csv-prototype_1](demo-case/filter-some-row/use-python-csv-prototype_1)
@@ -44,9 +56,11 @@ $ git clone https://github.com/samwhelp/demo-php-office.git
 * filter-some-row/[use-python-csv](demo-case/filter-some-row/use-python-csv)
 * [demo-merge-csv-use-python-csv](demo-convert-to/demo-merge-csv-use-python-csv)
 
+
 ### python pandas
 
 * filter-some-row/[use-python-pandas](demo-case/filter-some-row/use-python-pandas)
+
 
 ### paste
 
@@ -56,3 +70,8 @@ $ git clone https://github.com/samwhelp/demo-php-office.git
 ## Related Projects
 
 * [demo-convert-data](https://github.com/samwhelp/demo-convert-data)
+
+
+## Forum
+
+* [關於「PHPOffice」的使用範例](https://www.ubuntu-tw.org/modules/newbb/viewtopic.php?post_id=361316#forumpost361316)
