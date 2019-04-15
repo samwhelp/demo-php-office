@@ -13,7 +13,7 @@
 			return FALSE;
 		}
 
-		// 將資料一行一行的寫入剛剛開啟的檔案。
+		// 將資料一列一列的寫入剛剛開啟的檔案。
 		foreach ((array)$data as $index => $cells) {
 			//var_dump($cells);
 
@@ -21,6 +21,7 @@
 			fputcsv($fp, (array)$cells);
 		}
 
+		// https://www.php.net/manual/en/function.fclose.php
 		fclose($fp);
 
 		return TRUE;
@@ -34,16 +35,19 @@
 			return [];
 		}
 
+		// https://www.php.net/manual/en/function.fopen.php
 		if (($fp = fopen($file, 'r')) === FALSE) { //若開檔失敗，就直接離開，不做下面的處理。
 			return [];
 		}
 
 		$data = [];
 
+		// https://www.php.net/manual/en/function.fgetcsv.php
 		while (($cells = fgetcsv($fp)) !== FALSE) {
 			$data[] = $cells;
 		}
 
+		// https://www.php.net/manual/en/function.fclose.php
 		fclose($fp);
 
 		return $data;

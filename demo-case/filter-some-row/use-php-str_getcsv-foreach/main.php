@@ -13,7 +13,7 @@
 			return FALSE;
 		}
 
-		// 將資料一行一行的寫入剛剛開啟的檔案。
+		// 將資料一列一列的寫入剛剛開啟的檔案。
 		foreach ((array)$data as $index => $cells) {
 			//var_dump($cells);
 
@@ -21,6 +21,7 @@
 			fputcsv($fp, (array)$cells);
 		}
 
+		// https://www.php.net/manual/en/function.fclose.php
 		fclose($fp);
 
 		return TRUE;
