@@ -32,7 +32,7 @@ $ git clone https://github.com/samwhelp/demo-php-office.git
 
 ### php fgetcsv and fputcsv
 
-* [filter-some-row/use-php-fputcsv](demo-case/filter-some-row/use-php-fputcsv)
+* [filter-some-row/use-php-fgetcsv](demo-case/filter-some-row/use-php-fgetcsv)
 * [demo-merge-csv-use-php-fputcsv](demo-convert-to/demo-merge-csv-use-php-fputcsv)
 
 ### python csv

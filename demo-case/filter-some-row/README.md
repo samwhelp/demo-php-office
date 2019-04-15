@@ -10,5 +10,5 @@
 
 * [use-awk](use-awk)
 * [use-php-office](use-php-office)
-* [use-php-fputcsv](use-php-fputcsv)
+* [use-php-fgetcsv](use-php-fgetcsv)
 * [use-python-csv](use-python-csv)
