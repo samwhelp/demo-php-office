@@ -27,4 +27,8 @@ $ make
 
 ## 對照寫法
 
-* use-php-fgetcsv-foreach/[main.php](../use-php-fgetcsv-foreach/main.php)
+* use-php-fgetcsv-foreach_1/[main.php](../use-php-fgetcsv-foreach_1/main.php)
+* use-php-fgetcsv-foreach_2/[main.php](../use-php-fgetcsv-foreach_2/main.php)
+* use-php-fgetcsv_1/[main.php](../use-php-fgetcsv_1/main.php)
+* use-php-fgetcsv_2/[main.php](../use-php-fgetcsv_2/main.php)
+* use-php-fgetcsv_3/[main.php](../use-php-fgetcsv_3/main.php)

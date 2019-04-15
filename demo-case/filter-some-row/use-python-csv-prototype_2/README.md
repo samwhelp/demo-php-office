@@ -5,6 +5,11 @@
 * [main.py](main.py)
 
 
+## 主要程式碼
+
+* [main.py](main.py)
+
+
 ## Howto
 
 來源檔案放在「data」這個資料夾底下
