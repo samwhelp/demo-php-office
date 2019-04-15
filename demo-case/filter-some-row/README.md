@@ -10,6 +10,7 @@
 
 * [use-awk](use-awk)
 * [use-php-str_getcsv-foreach](use-php-str_getcsv-foreach)
+* [use-php-fgetcsv-foreach](use-php-fgetcsv-foreach)
 * [use-php-office](use-php-office)
 * [use-php-fgetcsv](use-php-fgetcsv)
 * [use-python-csv](use-python-csv)
