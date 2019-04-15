@@ -44,7 +44,8 @@ $ git clone https://github.com/samwhelp/demo-php-office.git
 ### php fgetcsv and fputcsv and str_getcsv
 
 * filter-some-row/[use-php-str_getcsv-foreach](demo-case/filter-some-row/use-php-str_getcsv-foreach)
-* filter-some-row/[use-php-fgetcsv-foreach](demo-case/filter-some-row/use-php-fgetcsv-foreach)
+* filter-some-row/[use-php-fgetcsv-foreach_1](demo-case/filter-some-row/use-php-fgetcsv-foreach_1)
+* filter-some-row/[use-php-fgetcsv-foreach_2](demo-case/filter-some-row/use-php-fgetcsv-foreach_2)
 * filter-some-row/[use-php-fgetcsv](demo-case/filter-some-row/use-php-fgetcsv)
 * [demo-merge-csv-use-php-fputcsv](demo-convert-to/demo-merge-csv-use-php-fputcsv)
 
