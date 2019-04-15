@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+# https://docs.python.org/3/library/csv.html
+# https://docs.python.org/3/library/io.html
+# https://blog.gtwang.org/programming/python-csv-file-reading-and-writing-tutorial/
+# https://en.wikipedia.org/wiki/Fluent_interface#PHP
 
 import csv
 
@@ -10,13 +14,6 @@ class FileCsv:
 		return self._FilePath
 	def setFilePath (self, val):
 		self._FilePath = val
-		return self
-
-	_Handle = None
-	def getHandle (self):
-		return self._Handle
-	def setHandle (self, val):
-		self._Handle = val
 		return self
 
 	_Data = []
@@ -54,31 +51,31 @@ class AppFilter:
 
 	def run (self):
 
-		csv_source = FileCsvReader().setFilePath('var/input.csv').load()
+		source_csv = FileCsvReader().setFilePath('var/input.csv').load()
 
-		data_source = csv_source.toArray()
+		source_data = source_csv.toArray()
 
-		data_target = []
+		target_data = []
 
-		for row_source, cells_source in enumerate(data_source):
+		for source_row, source_cols in enumerate(source_data): ## 一列一列地巡迴
 
-			#if row_source == 0: # 不處理第一列
+			#if source_row == 0: ## 不處理第一列
 			#	continue
 
 
-			#print(cells_source);
+			#print(source_cols);
 
-			if cells_source[3] == '0':
+			if source_cols[3] == '0': ## 排除第四個欄位是「0」的那一列(row)。第四個欄位指的是「欄位D」。
 				continue
 
-			data_target.append(cells_source);
+			target_data.append(source_cols); ## 此列沒被排除，所以放到「target_data」。
 
 
-		#print(data_target)
+		#print(target_data)
 
-		csv_target = FileCsvWriter().setFilePath('var/output.csv').setData(data_target)
+		target_csv = FileCsvWriter().setFilePath('var/output.csv').setData(target_data)
 
-		csv_target.save()
+		target_csv.save() ## 把「target_data」寫到「var/output.csv」。
 
 if __name__ == "__main__":
 	AppFilter().run()

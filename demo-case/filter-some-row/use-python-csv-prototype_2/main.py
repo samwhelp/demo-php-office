@@ -15,7 +15,7 @@ def main ():
 	with open(input_csv) as input_file:
 		reader = csv.reader(input_file)
 
-		for row in reader: ## 一列一列巡迴
+		for row in reader: ## 一列一列地巡迴
 			# print(row)
 
 			if row[3] == '0': ## 排除第四個欄位是「0」的那一列(row)。第四個欄位指的是「欄位D」。
