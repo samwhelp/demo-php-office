@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-	function save_csv ($file, $data)
+	function save_csv ($file, $data=array())
 	{
 		//var_dump($data);
 
@@ -14,11 +14,11 @@
 		}
 
 		// 將資料一行一行的寫入剛剛開啟的檔案。
-		foreach ($data as $index => $cells) {
+		foreach ((array)$data as $index => $cells) {
 			//var_dump($cells);
 
 			//https://www.php.net/manual/en/function.fputcsv.php
-			fputcsv($fp, $cells);
+			fputcsv($fp, (array)$cells);
 		}
 
 		fclose($fp);
