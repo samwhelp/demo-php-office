@@ -39,6 +39,7 @@ $ git clone https://github.com/samwhelp/demo-php-office.git
 
 ### python csv
 
+* filter-some-row/[use-python-csv-prototype](demo-case/filter-some-row/use-python-csv-prototype)
 * filter-some-row/[use-python-csv](demo-case/filter-some-row/use-python-csv)
 * [demo-merge-csv-use-python-csv](demo-convert-to/demo-merge-csv-use-python-csv)
 
