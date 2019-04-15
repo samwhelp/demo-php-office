@@ -34,11 +34,17 @@
 			return [];
 		}
 
-		// https://www.php.net/manual/en/function.str-getcsv.php#114764
-		$data = array_map('str_getcsv', file($file)); //將整個csv檔載入。
+		if (($fp = fopen($file, 'r')) === FALSE) { //若開檔失敗，就直接離開，不做下面的處理。
+			return [];
+		}
 
-		//https://www.php.net/manual/en/function.array-shift.php
-		//array_shift($data); # remove column header //排除第一行，這裡因為要留著，所以不做這個動作
+		$data = [];
+
+		while (($cells = fgetcsv($fp)) !== FALSE) {
+			$data[] = $cells;
+		}
+
+		fclose($fp);
 
 		return $data;
 	}

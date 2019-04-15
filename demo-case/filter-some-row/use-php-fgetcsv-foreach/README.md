@@ -22,4 +22,4 @@ $ make
 
 ## 對照寫法
 
-* use-php-fgetcsv-foreach/[main.php](../use-php-fgetcsv-foreach/main.php)
+* use-php-str_getcsv-foreach/[main.php](../use-php-str_getcsv-foreach/main.php)
