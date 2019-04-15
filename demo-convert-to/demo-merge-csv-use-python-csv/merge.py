@@ -12,13 +12,6 @@ class FileCsv:
 		self._FilePath = val
 		return self
 
-	_Handle = None
-	def getHandle (self):
-		return self._Handle
-	def setHandle (self, val):
-		self._Handle = val
-		return self
-
 	_Data = []
 	def getData (self):
 		return self._Data
@@ -54,34 +47,33 @@ class AppMerge:
 
 	def run (self):
 
-		csv_source = FileCsvReader().setFilePath('1.csv').load()
+		source_csv = FileCsvReader().setFilePath('1.csv').load()
+		target_csv = FileCsvReader().setFilePath('3.csv').load()
 
-		csv_target = FileCsvReader().setFilePath('3.csv').load()
-
-		data_source = csv_source.toArray()
-		data_target = csv_target.toArray()
+		source_data = source_csv.toArray()
+		target_data = target_csv.toArray()
 
 
-		for row_target, cells_target in enumerate(csv_target.toArray()):
+		for target_row, target_cols in enumerate(target_data): ## 從「列(row)」開始巡迴
 
-			if row_target == 0: # 不處理第一列
+			if target_row == 0: ## 不處理第一列
 				continue
 
 
-			for col_target, cell_target in enumerate(cells_target):
+			for target_col, cell_target in enumerate(target_cols): ## 從「某列(row)」開始巡迴「欄(col)」
 
-				if col_target >= 2: # 不處理第三攔以後
+				if target_col >= 2: ## 不處理第三攔以後
 					continue
 
-				cell_source = data_source[row_target][col_target]
-				data_target[row_target][col_target] = cell_source
+				source_cell = source_data[target_row][target_col]
+				target_data[target_row][target_col] = source_cell
 
 
-		# print(data_target)
+		# print(target_data)
 
-		csv_final = FileCsvWriter().setFilePath('final.csv').setData(data_target)
+		final_csv = FileCsvWriter().setFilePath('final.csv').setData(target_data)
 
-		csv_final.save()
+		final_csv.save() ## 把「target_data」寫到「final.csv」。
 
-if __name__ == "__main__":
+if __name__ == '__main__':
 	AppMerge().run()
