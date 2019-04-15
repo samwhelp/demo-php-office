@@ -14,11 +14,11 @@
 		}
 
 		// 將資料一列一列的寫入剛剛開啟的檔案。
-		foreach ((array)$data as $index => $cells) {
-			//var_dump($cells);
+		foreach ((array)$data as $index => $cols) {
+			//var_dump($cols);
 
 			//https://www.php.net/manual/en/function.fputcsv.php
-			fputcsv($fp, (array)$cells);
+			fputcsv($fp, (array)$cols);
 		}
 
 		// https://www.php.net/manual/en/function.fclose.php
@@ -43,17 +43,17 @@
 		$data = [];
 
 		// https://www.php.net/manual/en/function.fgetcsv.php
-		while (($cells = fgetcsv($fp)) !== FALSE) {
+		while (($cols = fgetcsv($fp)) !== FALSE) {
 
 
 			// https://www.php.net/manual/en/control-structures.if.php
 			// https://www.php.net/manual/en/language.operators.comparison.php
 
-			if ($cells['3'] == '0') { // 排除 欄位 '3' 是 0 的 那一列(row)
+			if ($cols['3'] == '0') { // 排除 欄位 '3' 是 0 的 那一列(row)
 				continue;
 			}
 
-			$data[] = $cells;
+			$data[] = $cols;
 		}
 
 		// https://www.php.net/manual/en/function.fclose.php

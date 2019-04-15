@@ -14,11 +14,11 @@
 		}
 
 		// 將資料一列一列的寫入剛剛開啟的檔案。
-		foreach ((array)$data as $index => $cells) {
-			//var_dump($cells);
+		foreach ((array)$data as $index => $cols) {
+			//var_dump($cols);
 
 			//https://www.php.net/manual/en/function.fputcsv.php
-			fputcsv($fp, (array)$cells);
+			fputcsv($fp, (array)$cols);
 		}
 
 		// https://www.php.net/manual/en/function.fclose.php
@@ -43,8 +43,8 @@
 		$data = [];
 
 		// https://www.php.net/manual/en/function.fgetcsv.php
-		while (($cells = fgetcsv($fp)) !== FALSE) {
-			$data[] = $cells;
+		while (($cols = fgetcsv($fp)) !== FALSE) {
+			$data[] = $cols;
 		}
 
 		// https://www.php.net/manual/en/function.fclose.php
@@ -72,21 +72,21 @@
 		$target_data = []; // 新的資料儲存處，用來紀錄想要的那幾列(row)
 
 		// https://www.php.net/manual/en/control-structures.foreach.php
-		foreach ($source_data as $index => $cells) {
+		foreach ($source_data as $index => $cols) {
 
-			//var_dump($cells);
+			//var_dump($cols);
 
 
 			// https://www.php.net/manual/en/control-structures.if.php
 			// https://www.php.net/manual/en/language.operators.comparison.php
 
-			if ($cells['3'] == '0') { // 排除 欄位 '3' 是 0 的 那一列(row)
+			if ($cols['3'] == '0') { // 排除 欄位 '3' 是 0 的 那一列(row)
 				continue;
 			}
 
 			// https://www.php.net/manual/en/function.array-push.php
-			//array_push($target_data, $cells);
-			$target_data[] = $cells;
+			//array_push($target_data, $cols);
+			$target_data[] = $cols;
 		}
 
 		//var_dump($target_data);
