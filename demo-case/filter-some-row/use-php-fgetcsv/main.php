@@ -175,14 +175,14 @@ class Model {
 		;
 
 
-		$data_source = $csv_source->toArray();
+		$source_data = $csv_source->toArray();
 
-		$data_target = [];
+		$target_data = [];
 
-		foreach ($data_source as $row_source => $cells_source) {
+		foreach ($source_data as $source_row => $source_cols) {
 
 			/*
-			if ($row_source === 0) { // 不處理第一列
+			if ($source_row === 0) { // 不處理第一列
 				continue;
 			}
 			*/
@@ -190,27 +190,26 @@ class Model {
 			// https://www.php.net/manual/en/control-structures.if.php
 			// https://www.php.net/manual/en/language.operators.comparison.php
 
-			if ($cells_source['3'] == '0') { // 排除 欄位 '3' 是 0 的 那一行
+			if ($source_cols['3'] == '0') { // 排除「欄位 3 (D)」是「0」的 那一列(row)
 				continue;
 			}
 
-			$data_target[] = $cells_source;
-
+			$target_data[] = $source_cols;
 
 		}
 
-		//var_dump($data_target);
+		//var_dump($target_data);
 
 		(new FileCsvWriter)
 			->setFilePath($this->_TargetFilePath)
-			->setData($data_target)
+			->setData($target_data)
 			->save()
 		;
 
 
 	}
 
-} // class Model
+} // End class Model
 
 class App {
 
@@ -248,6 +247,6 @@ class App {
 		;
 	}
 
-}
+} // End class App
 
 (new App)->run();
