@@ -139,34 +139,34 @@ class AppMerge {
 			->load()
 		;
 
-		$data_source = $this->_Csv['source']->toArray();
+		$source_data = $this->_Csv['source']->toArray();
 
 		$this->_Csv['target'] = (new FileCsvReader)
 			->setFilePath(__DIR__ . '/3.csv')
 			->load()
 		;
 
-		$data_target = $this->_Csv['target']->toArray();
+		$target_data = $this->_Csv['target']->toArray();
 
 
-		//var_dump($data_source);
-		//var_dump($data_target);
+		//var_dump($source_data);
+		//var_dump($target_data);
 
-		foreach ($data_target as $row_target => $cells_target) {
+		foreach ($target_data as $target_row => $target_cols) {
 
-			if ($row_target === 0) { // 不處理第一列
+			if ($target_row === 0) { // 不處理第一列
 				continue;
 			}
 
-			foreach ($cells_target as $col_target => $cell_target) {
+			foreach ($target_cols as $target_col => $target_cell) {
 
-				if ($col_target >= 2) { // 不處理第三攔以後
+				if ($target_col >= 2) { // 不處理第三攔以後
 					continue;
 				}
 
-				$cell_source = $data_source[$row_target][$col_target];
+				$source_cell = $source_data[$target_row][$target_col];
 
-				$data_target[$row_target][$col_target] = $cell_source;
+				$target_data[$target_row][$target_col] = $source_cell;
 			}
 		}
 
@@ -175,7 +175,7 @@ class AppMerge {
 		;
 
 		$this->_Csv['final']
-			->setData($data_target)
+			->setData($target_data)
 			->save()
 		;
 
