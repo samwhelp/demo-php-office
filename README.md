@@ -30,8 +30,9 @@ $ git clone https://github.com/samwhelp/demo-php-office.git
 
 * [filter-some-row/use-awk](demo-case/filter-some-row/use-awk)
 
-### php fgetcsv and fputcsv
+### php fgetcsv and fputcsv and str_getcsv
 
+* [filter-some-row/use-php-str_getcsv-foreach](demo-case/filter-some-row/use-php-str_getcsv-foreach)
 * [filter-some-row/use-php-fgetcsv](demo-case/filter-some-row/use-php-fgetcsv)
 * [demo-merge-csv-use-php-fputcsv](demo-convert-to/demo-merge-csv-use-php-fputcsv)
 
