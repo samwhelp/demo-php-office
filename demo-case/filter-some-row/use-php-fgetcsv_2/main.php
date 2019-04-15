@@ -169,15 +169,22 @@ class Model {
 			return;
 		}
 
-		$csv_source = (new FileCsvReader)
+
+		$target_csv = (new FileCsvWriter)
+			->setFilePath($this->_TargetFilePath)
+			->open()
+		;
+
+
+		$source_csv = (new FileCsvReader)
 			->setFilePath($this->_SourceFilePath)
 			->load()
 		;
 
 
-		$source_data = $csv_source->toArray();
+		$source_data = $source_csv->toArray();
 
-		$target_data = [];
+
 
 		foreach ($source_data as $source_row => $source_cols) {
 
@@ -194,18 +201,11 @@ class Model {
 				continue;
 			}
 
-			$target_data[] = $source_cols;
+			$target_csv->writeRow($source_cols);
 
 		}
 
-		//var_dump($target_data);
-
-		(new FileCsvWriter)
-			->setFilePath($this->_TargetFilePath)
-			->setData($target_data)
-			->save()
-		;
-
+		$target_csv->close();
 
 	}
 
