@@ -32,3 +32,4 @@ $ make
 * use-php-fgetcsv_1/[main.php](../use-php-fgetcsv_1/main.php)
 * use-php-fgetcsv_2/[main.php](../use-php-fgetcsv_2/main.php)
 * use-php-fgetcsv_3/[main.php](../use-php-fgetcsv_3/main.php)
+* use-php-office/[main.php](../use-php-office/main.php)

@@ -62,14 +62,14 @@ class Model {
 
 		// ## 從第一列(row) 開始跑到 最後一列
 		$deleted_rows = 0; // 已經刪除的列數。
-		foreach ($source as $index => $cells) {
-			//var_dump($cells);
+		foreach ($source as $index => $cols) {
+			//var_dump($cols);
 
 			// https://www.php.net/manual/en/control-structures.if.php
 			// https://www.php.net/manual/en/language.operators.comparison.php
 
-			if ($cells['D'] != '0') { // 挑出 欄位 'D' 不是 0 的 那一列
-				$target[] = $cells; // 儲存挑出來的這列，只是除錯用
+			if ($cols['D'] != '0') { // 挑出 欄位 'D' 不是 0 的 那一列
+				$target[] = $cols; // 儲存挑出來的這列，只是除錯用
 				continue;
 			}
 			//var_dump($deleted_rows);
