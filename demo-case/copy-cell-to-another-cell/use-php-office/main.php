@@ -71,12 +71,13 @@ class Model {
 			// https://www.php.net/manual/en/language.operators.comparison.php
 
 			$title = '';
+			//https://www.php.net/manual/en/function.array-key-exists.php
 			if (array_key_exists('A', $cols)) { //檢查欄位「A」是否有資料。
 				$title = trim($cols['A']);
 			}
 
 			if (!$title) { // 第一欄(欄位A)若是空白，略過
-				continue;
+				continue; //https://www.php.net/manual/en/control-structures.continue.php
 			}
 
 			//var_dump($title);
@@ -84,11 +85,11 @@ class Model {
 			// ## 拆解「欄位A」的資料，
 			// https://www.php.net/manual/en/function.explode.php
 			$temp = explode(' ', $title, 2); // 以「空白」為基準，來拆解。
-			$main = $temp[0]; //拆解後的第一個值
+			$main = $temp[0]; //拆解後的第一個值 ，可能的值，「SK040」，「EKONOR」，「KC045」，「ENB045」。
 			$sub = $temp[1]; //拆解後的第二個值
 
 			// ## 做選取的動作，這是您原本要的主要功能。
-			$this->selectTitle($main, $title);
+			$this->selectTitle($main, $title); //請參考下面的定義，在「protected function selectTitle($key, $val)」那。
 
 
 		}
@@ -104,10 +105,10 @@ class Model {
 
 	protected function selectTitle($key, $val)
 	{
-
+		// https://www.php.net/manual/en/function.array-key-exists.php
 		// 根據「$key」來篩選，若沒有存在「$this->_View」裡，就不處理。
 		// 關於「$key」有可能的執行，請參考下面的「initView」，
-		// 目前設定的有「SK040」，「EKONOR」，「KC045」
+		// 目前設定的有「SK040」，「EKONOR」，「KC045」，「ENB045」。
 		if (!array_key_exists($key, $this->_View)) {
 			return;
 		}
